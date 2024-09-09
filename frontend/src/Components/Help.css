@@ -1,0 +1,28 @@
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  .chat-message {
+    margin: 5px 0;
+  }
+  
+  .chat-message.user {
+    text-align: right;
+  }
+  
+  .chat-message.bot {
+    text-align: left;
+  }
+  
+  body[data-theme='dark'] .chat-box {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
