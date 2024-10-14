@@ -26,6 +26,7 @@ import BudgetSetting from './Components/BudgetSetting';
 import Reports from './Components/Reports';
 import ProfileSettings from './Components/ProfileSettings';
 import Help from './Components/Help';
+import Categories from './Components/Categories';
 // import Home from './Components/Home'; // Ensure you have these components
 // import About from './Components/About';
 // import Contact from './Components/Contact';
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/expense-tracker" element={<ExpenseTracker />} />
+        <Route path="/categories" element={<Categories />} />
       </Routes>
     </Router>
   );

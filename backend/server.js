@@ -22,6 +22,9 @@ import cors from "cors";
 import path from "path";
 import authroutes from "./routes/authRoute.js";
 import cookieParser from "cookie-parser";
+import expenseRoutes from "./routes/expenseRoute.js";
+
+
 //import register from "./controllers/authCon.js";
 
 import { checkDbConnection, createTables } from "./db/connect.js"; // Corrected import path
@@ -58,6 +61,7 @@ app.get('/', (req, res) => {
 // });
 
 app.use('/api',authroutes);
+app.use('/api/expenses', expenseRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

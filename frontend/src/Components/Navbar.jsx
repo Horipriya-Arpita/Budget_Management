@@ -69,11 +69,23 @@ const Navbars = () => {
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              About
+            <Nav.Link as={Link} to="/dashboard">
+              Dashboard
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
-              Contact
+            <Nav.Link as={Link} to="/reports">
+              Analysis
+            </Nav.Link>
+            <Nav.Link as={Link} to="/budget-setting">
+              Budgets
+            </Nav.Link>
+            <Nav.Link as={Link} to="/accounts">
+              Accounts
+            </Nav.Link>
+            <Nav.Link as={Link} to="/categories">
+              Categories
+            </Nav.Link>
+            <Nav.Link as={Link} to="/expense-tracker">
+              Expenses
             </Nav.Link>
           </Nav>
           <Form inline className="d-flex">
